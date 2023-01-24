@@ -12,6 +12,32 @@
 # If the two lists contain the same item, only show it once!
 # Lastly, display each item in the list prepended with "buy ".
 
+# create two lists
+mine = ["milk","eggs","bacon","tacos"]
+friend = ["beer","cookies","apple","tacos"]
+
+#combine the list
+combine_list = mine + friend
+puts combine_list
+
+#sort the list
+puts combine_list.sort
+sorted_list = combine_list.sort
+
+#remove duplicate
+puts sorted_list.uniq
+uniq_list = sorted_list.uniq
+
+# display it
+puts "buy #{uniq_list}"
+puts "buy #{uniq_list[0]}"
+puts "buy #{uniq_list[1]}"
+puts "buy #{uniq_list[2]}"
+puts "buy #{uniq_list[3]}"
+puts "buy #{uniq_list[4]}"
+puts "buy #{uniq_list[5]}"
+puts "buy #{uniq_list[6]}"
+
 # HINTS
 # Learn to read the documentation!
 # https://ruby-doc.org/core-2.7.0/Array.html

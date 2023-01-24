@@ -12,6 +12,29 @@
 # that reads "YOU LOSE!", otherwise, write a message that
 # reads "THE POINT IS {number}"
 
+die_roll1 = rand(1..6)
+puts die_roll1
+
+die_roll2 = rand(1..6)
+puts die_roll2
+
+total = die_roll1 + die_roll2
+puts total
+puts "Total: #{total}"
+
+#if total >= 7 && total <=11 --> if win between 7 and 11
+if total ==7 || total ==11
+    puts "YOU WIN!"
+elsif total ==2 || total ==3 || total == 12
+    puts "YOU LOSE!"
+else 
+    puts "THE POINT IS #{total}"
+end 
+
+nothing = nil # binary = 0, or nothing
+
+
+
 # HINTS
 # Get a random number between 1 and 6 by doing:
 # rand(1..6)
@@ -20,13 +43,13 @@
 # if dinner == "tacos" && dessert == "ice cream"
 
 # 1. set the first die and write it to the screen
-die1 = rand(1..6)
-puts die1
+#die1 = rand(1..6)
+#puts die1
 
 # 2. set the second die and write it to the screen
-die2 = rand(1..6)
-puts die2
+#die2 = rand(1..6)
+#puts die2
 
 # 3. create a variable for the total and write it to the screen
-total = die1 + die2
-puts "The total is: #{total}"
+#total = die1 + die2
+#puts "The total is: #{total}"
