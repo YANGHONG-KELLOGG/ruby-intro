@@ -16,7 +16,7 @@ loop do
     if index == tacos.count #so it can check the total amount of items on tacos array
         break
     end 
-    zebra = tacos{index}
+    
     puts "#{tacos[index]} tacos!"
     index = index + 1
     #puts index
@@ -29,13 +29,3 @@ for zebra in tacos
     puts "#{zebra} tacos!"
 end
 
-index = 0
-loop do
-    if index == tacos.count #so it can check the total amount of items on tacos array
-        break
-    end 
-
-    puts "#{tacos[index]} tacos!"
-    index = index + 1
-    #puts index
-end
