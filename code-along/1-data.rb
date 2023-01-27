@@ -72,20 +72,28 @@ puts "Hello".downcase
 puts "Hello".swapcase
 
 
-# testing
+# testing TacosTacosTacos
 food1 = "Tacos"
 quantity = 3
 puts food1 * quantity
 
-
+# testing food2 + quantity
 food2 = "Tacos"
 quantity = 3
 puts "food2 + quantity"
 
+# testing food2 + 3
 food2 = "Tacos"
 quantity = 3
 puts "food2 + #{quantity}"
 
+# testing food2 * 3 -- text
 food2 = "Tacos"
 quantity = 3
 puts "food2 * #{quantity}"
+
+# testing tacos: 3  -- text + integer - convert to string (text)
+puts "tacos: " + 3.to_s
+
+# testing tacos: 3 --text
+puts "tacos: " + "3"

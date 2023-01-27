@@ -70,4 +70,32 @@ elsif temp >= 80 || temp <=60 # or
     puts "shit weather"
 end
 
+#back example
+
+bank_account_balance = 51
+if bank_account_balance > 50
+  bank_account_balance = bank_account_balance - 50
+  puts "You have successfully withdrawn $50"
+else
+  puts "Insufficient funds for that transaction."
+end
+if bank_account_balance > 50
+    bank_account_balance = bank_account_balance - 50
+    puts "You have successfully withdrawn $50"
+  else
+    puts "Insufficient funds for that transaction."
+  end
+
+# equal ==; assign a value =
+  dinner = "kale"
+      
+# incorrect - will cause unexpected results!
+if dinner = "tacos"
+  # This will always be true. The variable's value is reassigned.
+end
+      
+# correct
+if dinner == "tacos"
+  # This will properly perform the comparison
+end
 
