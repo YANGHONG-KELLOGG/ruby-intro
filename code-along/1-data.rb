@@ -72,4 +72,20 @@ puts "Hello".downcase
 puts "Hello".swapcase
 
 
+# testing
+food1 = "Tacos"
+quantity = 3
+puts food1 * quantity
 
+
+food2 = "Tacos"
+quantity = 3
+puts "food2 + quantity"
+
+food2 = "Tacos"
+quantity = 3
+puts "food2 + #{quantity}"
+
+food2 = "Tacos"
+quantity = 3
+puts "food2 * #{quantity}"
