@@ -27,6 +27,8 @@ puts favorite_foods[3].inspect #not actaully exist
 puts favorite_foods[-1].inspect #circlying back to the other end
 
 puts shopping_list[0][1] #[['diaper',"wiper"],["hand washer"]]
+puts shopping_list[0][0]
+puts shopping_list[1][1]
 
 # Add to the array 
 # puts favorite_foods+ "more tacos" --> not work 

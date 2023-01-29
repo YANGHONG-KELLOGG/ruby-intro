@@ -64,3 +64,11 @@ my_profile = { :name => "Brian", :location => "Chicago" }
 puts my_profile[:name]
 
 # It really doesn't matter which one you choose... But we'll mostly user the former.
+
+# add "yang"
+my_profile["name"] = "Yang"
+puts my_profile
+
+# replace ben with yang
+my_profile[:name] = "Yang"
+puts my_profile

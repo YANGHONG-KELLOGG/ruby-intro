@@ -22,6 +22,8 @@ bitcoin_data = JSON.parse(response)
 # Your Bitcoin is worth $62107.6569.
 
 # 1. Get input from a user using gets.chomp.
+#gets.chomp. “gets” is a method that asks the user to input something. 
+#“chomp” is a method that removes the blank line that is automatically created by “gets” after the input.
 puts "How much bitcoin do you have?"
 bitcoin = gets.chomp
 

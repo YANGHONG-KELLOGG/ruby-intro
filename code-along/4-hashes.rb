@@ -18,12 +18,35 @@ profile = {
 # Accessing data from the hash
 puts profile["name"]
 puts profile["location"]
-puts profile["timeline"]
+
+# puts profile["timeline"]["time"] will have error
+
+puts profile["timeline"][0]["time"]
 
 # More Complex Hashes
 
-profile["age"] = "..."
+user = {
+  "name" => "Ben",
+  "location" => { "city" => "Chicago", "state" => "IL" },
+  "status" => "Staying warm!"
+}
 
+city = user["location"]["city"]
+puts city
 
+state = user["location"]["state"]
+puts state
 
+# 
 
+user = {
+  "name" => { "first" => "Ben", "last" => "Block" },
+  "location" => { "city" => "Chicago", "state" => "IL" },
+  "timeline" => [{ "status" => "Brrr!", "posted_at" => "9:00am" },
+                 { "status" => "Coding.", "posted_at" => "10:00am" },
+                 { "status" => "Lunch time.", "posted_at" => "12:00pm" }]
+}
+
+first_name = user["name"]["first"]
+first_status = user["timeline"][0]["status"]
+puts "#{first_name}'s first post was #{first_status}"
