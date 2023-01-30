@@ -61,21 +61,29 @@ for rank in ranks
   end
 end
 
+puts card # last item from the deck before shuffle
+
 shuffled_deck = deck.shuffle
-hand = shuffled_deck[0,5]
+hand = shuffled_deck[0,5] # not 0 to 5, it is from 0, get 5 items
 
 puts hand
 
-# the above code is already good, why need below??
-for card in hand
-  puts card
+# the above code is already good, why need below?? hand is a list of cards, ruby is printing all 5 cards on 67 line
+# the below for loop, print each card. You can use for loop to put a logic. 
+
+for card in hand   # reassign values to card
+  # puts card
+  puts "my card is #{card}"
+
 end
 
 
 # why can we use "card" in both loops??
+# the scope of for loop, the things on the for loop only exists in for loop
 
+puts card
 
-# solution 2: how to write the loop in index??
+# solution 2: how to write the loop in index?? benefit of the For loop is no need to track index, faster code
 
 deck1 = []
 
@@ -89,7 +97,7 @@ loop do
     index1 = 0
     loop do
         
-        if index1 == suits.length
+        if index1 == suits.length # could be other conditions such as rank > 10
             break
         end 
 
